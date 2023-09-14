@@ -4,7 +4,7 @@
       "course_name": "Web Development Fundamentals",
       "id": 1,
       "credit": 3,
-      "price": "15000",
+      "price": 15000,
       "short_details": "Learn the basics of web development, including HTML, CSS, and JavaScript, to kickstart your web development journey."
     },
     {
@@ -12,7 +12,7 @@
       "course_name": "JavaScript Mastery",
       "id": 2,
       "credit": 4,
-      "price": "25000",
+      "price": 25000,
       "short_details": "Take your JavaScript skills to the next level with advanced topics and hands-on projects."
     },
     {
@@ -20,7 +20,7 @@
       "course_name": "Responsive Web Design",
       "id": 3,
       "credit": 2,
-      "price": "10000",
+      "price": 10000,
       "short_details": "Create beautiful, responsive websites that adapt to various screen sizes and devices."
     },
     {
@@ -28,7 +28,7 @@
       "course_name": "Backend Development",
       "id": 4,
       "credit": 3,
-      "price": "35000",
+      "price": 35000,
       "short_details": "Build powerful server-side applications using Node.js, Express, and MongoDB."
     },
     {
@@ -36,7 +36,7 @@
       "course_name": "Python for Web Development",
       "id": 5,
       "credit": 3,
-      "price": "18000",
+      "price": 18000,
       "short_details": "Learn how to use Python to create web applications and automate tasks on the web."
     },
     {
@@ -44,7 +44,7 @@
       "course_name": "Frontend Frameworks: React ",
       "id": 6,
       "credit": 4,
-      "price": "23000",
+      "price": 23000,
       "short_details": "Master popular frontend frameworks like React and Vue.js for building interactive web applications."
     },
     {
@@ -52,7 +52,7 @@
       "course_name": "Web Security and Ethical Hacking",
       "id": 7,
       "credit": 3,
-      "price": "35000",
+      "price": 35000,
       "short_details": "Protect web applications from security threats and learn ethical hacking techniques."
     },
     {
@@ -60,7 +60,7 @@
       "course_name": "UI/UX Design for Web",
       "id": 8,
       "credit": 2,
-      "price": "19000",
+      "price": 19000,
       "short_details": "Design user-friendly and visually appealing web interfaces for exceptional user experiences."
     },
     {
@@ -68,7 +68,7 @@
       "course_name": "Web Analytics and SEO",
       "id": 9,
       "credit": 2,
-      "price": "23000",
+      "price": 23000,
       "short_details": "Optimize websites for search engines and analyze user behavior to drive web traffic."
     }
   ]

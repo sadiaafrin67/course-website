@@ -10,8 +10,9 @@ const Home = () => {
   const [selectedCourse, setSelectedCourse] = useState([]);
   const [remainingCredit, setRemainingCredit] = useState(0);
   const [totalCredit, setTotalCredit] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
 //   console.log(allCourse);
-console.log(selectedCourse)
+// console.log(selectedCourse)
 
   useEffect(() => {
     fetch("./data.json")
@@ -22,8 +23,11 @@ console.log(selectedCourse)
 
   const handleSelectCourse = (course) => {
     const newCourse = [...selectedCourse, course]
+
     const isExist = selectedCourse.find((item) => item.id == course.id);
+
     let count = course.credit;
+    let price = course.price
 
     if(isExist) {
       return swal( "Oops!", "This course is already added!", "warning");
@@ -33,9 +37,18 @@ console.log(selectedCourse)
         selectedCourse.forEach((item) => {
             count = count + item.credit
         })
+
+        selectedCourse.forEach((item) => {
+            price = price + item.price
+        })
+        
         const totalRemainingCredit = 20 - count
 
+        if(count > 20) {
+            return swal( "Oops!", "You have no credit hour left!", "warning");
+        }
 
+        setTotalPrice(price)
         setTotalCredit(count)
         setRemainingCredit(totalRemainingCredit) 
         setSelectedCourse(newCourse);
@@ -109,7 +122,7 @@ console.log(selectedCourse)
 
         {/* cart */}
         <div className="cart ">
-          <Cart selectedCourse={selectedCourse} remainingCredit={remainingCredit} totalCredit={totalCredit}></Cart>
+          <Cart selectedCourse={selectedCourse} remainingCredit={remainingCredit} totalCredit={totalCredit} totalPrice={totalPrice}></Cart>
         </div>
       </div>
     </div>
