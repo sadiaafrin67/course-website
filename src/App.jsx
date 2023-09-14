@@ -1,13 +1,17 @@
 
 import './App.css'
+import Header from './Components/Header/Header'
+import Home from './Components/Home/Home'
+
 
 function App() {
  
 
   return (
     <>
-      
-      <h1 className='text-6xl bg-slate-600'>Hellow world</h1>
+      <Header></Header>
+      <Home></Home>
+     
      
     </>
   )

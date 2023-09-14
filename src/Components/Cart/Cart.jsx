@@ -1,0 +1,27 @@
+import PropTypes from "prop-types";
+
+
+
+const Cart = ({ selectedCourse }) => {
+    // console.log(selectedCourse)
+    return (
+        <div className="bg-[#FFFFFF] border p-6">
+            <h2>this is cart</h2>
+            <hr />
+            <h4 className="text-lg font-bold mt-3 mb-5">Course Name</h4>
+            {
+                selectedCourse.map(course => (
+                    
+                    <li className="list-decimal text-sm font-normal mb-2 text-gray-600" key={course.id}>{course.course_name
+                    }</li>
+                ))
+            }
+            <hr className="mt-5" />
+            <h4>Total Credit Hour:</h4>
+        </div>
+    );
+};
+Cart.propTypes = {
+    selectedCourse: PropTypes.array.isRequired
+}
+export default Cart;
