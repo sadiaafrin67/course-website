@@ -18,18 +18,22 @@ console.log(selectedCourse)
   }, []);
 
 
-//   const handleSelectCourse = (course) => {
-//     const newCourse = [...selectedCourse, course]
-//     const isExist = selectedCourse.find((item) => item.id == course.id);
-//     if(isExist) {
-//       return swal( "Oops!", "This course is already added!", "warning");
-//     }
-//     else{
-//       setSelectedCourse(newCourse);
-//     }
+  const handleSelectCourse = (course) => {
+    const newCourse = [...selectedCourse, course]
+    const isExist = selectedCourse.find((item) => item.id == course.id);
+    let count = 0;
+
+    if(isExist) {
+      return swal( "Oops!", "This course is already added!", "warning");
+    }
+    else{
+
+        
+      setSelectedCourse(newCourse);
+    }
     
    
-//   }
+  }
 
 
 
