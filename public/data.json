@@ -1,0 +1,75 @@
+[
+    {
+      "img": "https://i.ibb.co/0YPLGRq/28159349-webdeveloper-1.jpg",
+      "course_name": "Web Development Fundamentals",
+      "id": 1,
+      "credit": 3,
+      "price": "$99.99",
+      "short_details": "Learn the basics of web development, including HTML, CSS, and JavaScript, to kickstart your web development journey."
+    },
+    {
+      "img": "https://i.ibb.co/PFK7gG4/10782951-19199360.jpg",
+      "course_name": "JavaScript Mastery",
+      "id": 2,
+      "credit": 4,
+      "price": "$149.99",
+      "short_details": "Take your JavaScript skills to the next level with advanced topics and hands-on projects."
+    },
+    {
+      "img": "https://i.ibb.co/g7mfgvJ/2710998-390029-PCE3-TF-411.jpg",
+      "course_name": "Responsive Web Design",
+      "id": 3,
+      "credit": 2,
+      "price": "$79.99",
+      "short_details": "Create beautiful, responsive websites that adapt to various screen sizes and devices."
+    },
+    {
+      "img": "https://i.ibb.co/LryS0Z3/25579589-backend-text-1.jpg",
+      "course_name": "Backend Development with Node.js",
+      "id": 4,
+      "credit": 3,
+      "price": "$119.99",
+      "short_details": "Build powerful server-side applications using Node.js, Express, and MongoDB."
+    },
+    {
+      "img": "https://i.ibb.co/k6dSGTJ/14723889-Set-of-programmers-02-02.jpg",
+      "course_name": "Python for Web Development",
+      "id": 5,
+      "credit": 3,
+      "price": "$99.99",
+      "short_details": "Learn how to use Python to create web applications and automate tasks on the web."
+    },
+    {
+      "img": "https://i.ibb.co/s3pPSC2/28158111-frontend-4.jpg",
+      "course_name": "Frontend Frameworks: React and Vue.js",
+      "id": 6,
+      "credit": 4,
+      "price": "$149.99",
+      "short_details": "Master popular frontend frameworks like React and Vue.js for building interactive web applications."
+    },
+    {
+      "img": "https://i.ibb.co/J2Q94tt/13867230-1912-i039-015-internet-censorship-blocking-isometric.jpg",
+      "course_name": "Web Security and Ethical Hacking",
+      "id": 7,
+      "credit": 3,
+      "price": "$129.99",
+      "short_details": "Protect web applications from security threats and learn ethical hacking techniques."
+    },
+    {
+      "img": "https://i.ibb.co/gmtbQDG/26433023-uiux-text-2.jpg",
+      "course_name": "UI/UX Design for Web",
+      "id": 8,
+      "credit": 2,
+      "price": "$89.99",
+      "short_details": "Design user-friendly and visually appealing web interfaces for exceptional user experiences."
+    },
+    {
+      "img": "https://i.ibb.co/7Gpwt2f/7378453-32010.jpg",
+      "course_name": "Web Analytics and SEO",
+      "id": 9,
+      "credit": 2,
+      "price": "$79.99",
+      "short_details": "Optimize websites for search engines and analyze user behavior to drive web traffic."
+    }
+  ]
+  
