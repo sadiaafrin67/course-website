@@ -8,6 +8,8 @@ import swal from 'sweetalert';
 const Home = () => {
   const [allCourse, setAllCourse] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([]);
+  const [remainingCredit, setRemainingCredit] = useState(0);
+  const [totalCredit, setTotalCredit] = useState(0);
 //   console.log(allCourse);
 console.log(selectedCourse)
 
@@ -21,15 +23,22 @@ console.log(selectedCourse)
   const handleSelectCourse = (course) => {
     const newCourse = [...selectedCourse, course]
     const isExist = selectedCourse.find((item) => item.id == course.id);
-    let count = 0;
+    let count = course.credit;
 
     if(isExist) {
       return swal( "Oops!", "This course is already added!", "warning");
     }
     else{
 
-        
-      setSelectedCourse(newCourse);
+        selectedCourse.forEach((item) => {
+            count = count + item.credit
+        })
+        const totalRemainingCredit = 20 - count
+
+
+        setTotalCredit(count)
+        setRemainingCredit(totalRemainingCredit) 
+        setSelectedCourse(newCourse);
     }
     
    
@@ -100,7 +109,7 @@ console.log(selectedCourse)
 
         {/* cart */}
         <div className="cart ">
-          <Cart selectedCourse={selectedCourse}></Cart>
+          <Cart selectedCourse={selectedCourse} remainingCredit={remainingCredit} totalCredit={totalCredit}></Cart>
         </div>
       </div>
     </div>
