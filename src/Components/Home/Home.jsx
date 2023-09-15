@@ -8,9 +8,10 @@ import swal from 'sweetalert';
 const Home = () => {
   const [allCourse, setAllCourse] = useState([]);
   const [selectedCourse, setSelectedCourse] = useState([]);
-  const [remainingCredit, setRemainingCredit] = useState(0);
+  const [remainingCredit, setRemainingCredit] = useState(20);
   const [totalCredit, setTotalCredit] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
+  
 //   console.log(allCourse);
 // console.log(selectedCourse)
 
@@ -41,7 +42,7 @@ const Home = () => {
         selectedCourse.forEach((item) => {
             price = price + item.price
         })
-        
+
         const totalRemainingCredit = 20 - count
 
         if(count > 20) {
